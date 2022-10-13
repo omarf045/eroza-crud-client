@@ -22,7 +22,8 @@ const CompEditArticulo = () => {
 
   useEffect(() => {
     getArticuloById();
-  }, [nombre, precio]);
+    //eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const getArticuloById = async () => {
     const res = await axios.get(URI + id);
