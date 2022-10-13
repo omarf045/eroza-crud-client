@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const URI = "http://localhost:8000/articulos/";
+const URI = "https://eroza-crud-server-production.up.railway.app/articulos/";
 
 const CompCreateArticulo = () => {
   const [nombre, setNombre] = useState("");
