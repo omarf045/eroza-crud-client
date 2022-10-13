@@ -22,7 +22,7 @@ const CompEditArticulo = () => {
 
   useEffect(() => {
     getArticuloById();
-  }, []);
+  }, [nombre, precio]);
 
   const getArticuloById = async () => {
     const res = await axios.get(URI + id);
